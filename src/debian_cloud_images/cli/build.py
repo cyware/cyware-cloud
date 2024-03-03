@@ -65,6 +65,7 @@ class Classes(collections.abc.MutableSet):
 class Check:
     def __init__(self):
         self.classes = Classes()
+        self.classes.add('BASE')
         self.classes.add('DEBIAN')
         self.classes.add('CLOUD')
         self.env = {}
@@ -109,10 +110,6 @@ class Check:
             self.env['CLOUD_RELEASE_VERSION_AZURE'] = self.info['version_azure'] = self.version_azure
 
     def check(self):
-        if self.arch.name in self.release.arch_supports_linux_image_cloud and self.vendor.use_linux_image_cloud:
-            self.classes.add('LINUX_IMAGE_CLOUD')
-        else:
-            self.classes.add('LINUX_IMAGE_BASE')
         self.classes.add('LAST')
 
 

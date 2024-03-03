@@ -4,35 +4,28 @@ import pathlib
 from .base import BaseCommand
 from ..images import Images
 from ..utils.libcloud.other.aws_ssm import SSMConnection
+from ..utils.retry import with_retries
 
 
 class SSMVariableSetter:
 
-    def __init__(self, access_key_id, secret_key, token, images, prefix, force_overwrite=False, dry_run=False):
+    def __init__(self, access_key_id, secret_key, token, images, prefix, config_image, force_overwrite=False, dry_run=False):
         self.images = images
         self.access_key_id = access_key_id
         self.secret_key = secret_key
         self.token = token
         self.prefix = prefix
+        self.config_image = config_image
         self.force_overwrite = force_overwrite
         self.dry_run = dry_run
         self.__regional_connections = {}
 
     def __call__(self):
-        release_id = None
-        release_name = None
 
         # Keep track of keys we've already set, per region
         regional_keys = {}
 
         for image in self.images.values():
-            try:
-                release_id = image.build_release_id
-                release_name = image.build_release
-                release_arch = image.build_arch
-            except IndexError:
-                logging.info(f'no builds for {image.name}')
-
             for upload in image.uploads:
 
                 # Note that some currently unsupported AWS regions
@@ -42,7 +35,14 @@ class SSMVariableSetter:
                     logging.info(f'Skipping {upload.provider} upload')
                     continue
 
+                release_name = upload.metadata.labels['debian.org/release']
+                releasemd = self.config_image.releases.get(release_name)
+
+                release_id = releasemd.id
                 region = upload.metadata.labels['aws.amazon.com/region']
+                release_arch = upload.metadata.labels['debian.org/arch']
+                release_name = upload.metadata.labels['debian.org/release']
+
                 if region not in regional_keys.keys():
                     regional_keys[region] = {}
                 logging.debug("Region: {}".format(region))
@@ -70,7 +70,9 @@ class SSMVariableSetter:
                         if self.dry_run:
                             logging.info("Dry-run: set {}={}, overwrite={}".format(key, value, overwrite))
                         else:
-                            self.connection(region).set_variable(key, value, overwrite=overwrite)
+                            with_retries(lambda: self.connection(region).set_variable(key,
+                                                                                      value,
+                                                                                      overwrite=overwrite))
 
     def connection(self, region):
         if region not in self.__regional_connections:
@@ -131,6 +133,7 @@ config options:
             token=self.config_get('ec2.auth.token', default=None),
             images=self.images,
             prefix=self.ssm_prefix,
+            config_image=self.config_image,
             force_overwrite=force_overwrite,
             dry_run=dry_run,
         )

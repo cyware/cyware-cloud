@@ -1,9 +1,8 @@
 # Welcome to the chrony configuration file. See chrony.conf(5) for more
 # information about usuable directives.
 
-# Use the AWS time sync service per
-# https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html
-server 169.254.169.123 prefer iburst
+# Use Azure platform PTP device
+refclock PHC /dev/ptp_hyperv poll 3 dpoll -2 offset 0
 
 # This directive specify the location of the file containing ID/key pairs for
 # NTP authentication.
