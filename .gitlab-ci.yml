@@ -22,9 +22,9 @@ before_script:
       mount -t tmpfs none /tmp
     fi
 
-test package:
+test package kali-rolling:
   stage: source test
-  image: debian:bookworm
+  image: kalilinux/kali-rolling:latest
   before_script:
   - apt-get update
   - apt-get build-dep -y ./package
@@ -47,13 +47,13 @@ test package:
     --color=yes
     tests
 
-test python bullseye:
+test python kali-dev:
   extends: .test python
-  image: debian:bullseye
+  image: kalilinux/kali-dev:latest
 
-test python bookworm:
+test python kali-rolling:
   extends: .test python
-  image: debian:bookworm
+  image: kalilinux/kali-rolling:latest
 
 test python latest:
   stage: source test
@@ -84,7 +84,7 @@ test python latest:
 
 .build:
   stage: build
-  image: debian:bookworm
+  image: kalilinux/kali-rolling:latest
   script:
     - |
       if [ "$CI_DISPOSABLE_ENVIRONMENT" ]; then
@@ -112,7 +112,7 @@ test python latest:
       ${CLOUD_RELEASE} ${CLOUD_VENDOR} ${CLOUD_ARCH}
     - 'xz -vk5T0 *.tar'
   artifacts:
-    name: debian-${CLOUD_RELEASE}-${CLOUD_VENDOR}-${CLOUD_ARCH}
+    name: kali-${CLOUD_RELEASE}-${CLOUD_VENDOR}-${CLOUD_ARCH}
     expire_in: 7 days
     paths:
       - '*.build.json'

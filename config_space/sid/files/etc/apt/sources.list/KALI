@@ -1,0 +1,2 @@
+deb {%apt_cdn%}/kali {%SUITE%} main contrib non-free
+deb-src {%apt_cdn%}/kali {%SUITE%} main contrib non-free
