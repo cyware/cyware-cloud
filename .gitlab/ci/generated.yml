@@ -91,6 +91,162 @@
       "CLOUD_VENDOR": "azure"
     }
   },
+  "azure kali-dev amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "azure"
+    }
+  },
+  "azure kali-dev arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "azure"
+    }
+  },
+  "azure kali-dev-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "azure"
+    }
+  },
+  "azure kali-dev-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "azure"
+    }
+  },
+  "azure kali-last-snapshot amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "azure"
+    }
+  },
+  "azure kali-last-snapshot arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "azure"
+    }
+  },
+  "azure kali-last-snapshot-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "azure"
+    }
+  },
+  "azure kali-last-snapshot-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "azure"
+    }
+  },
+  "azure kali-rolling amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "azure"
+    }
+  },
+  "azure kali-rolling arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "azure"
+    }
+  },
+  "azure kali-rolling-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
+      "CLOUD_VENDOR": "azure"
+    }
+  },
+  "azure kali-rolling-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
+      "CLOUD_VENDOR": "azure"
+    }
+  },
   "azure sid amd64 build": {
     "extends": ".build",
     "rules": [
@@ -247,6 +403,162 @@
       "CLOUD_VENDOR": "ec2"
     }
   },
+  "ec2 kali-dev amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "ec2"
+    }
+  },
+  "ec2 kali-dev arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "ec2"
+    }
+  },
+  "ec2 kali-dev-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "ec2"
+    }
+  },
+  "ec2 kali-dev-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "ec2"
+    }
+  },
+  "ec2 kali-last-snapshot amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "ec2"
+    }
+  },
+  "ec2 kali-last-snapshot arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "ec2"
+    }
+  },
+  "ec2 kali-last-snapshot-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "ec2"
+    }
+  },
+  "ec2 kali-last-snapshot-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "ec2"
+    }
+  },
+  "ec2 kali-rolling amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "ec2"
+    }
+  },
+  "ec2 kali-rolling arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "ec2"
+    }
+  },
+  "ec2 kali-rolling-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
+      "CLOUD_VENDOR": "ec2"
+    }
+  },
+  "ec2 kali-rolling-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
+      "CLOUD_VENDOR": "ec2"
+    }
+  },
   "ec2 sid amd64 build": {
     "extends": ".build",
     "rules": [
@@ -322,6 +634,84 @@
     "variables": {
       "CLOUD_ARCH": "amd64",
       "CLOUD_RELEASE": "buster-backports",
+      "CLOUD_VENDOR": "gce"
+    }
+  },
+  "gce kali-dev amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "gce"
+    }
+  },
+  "gce kali-dev-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "gce"
+    }
+  },
+  "gce kali-last-snapshot amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "gce"
+    }
+  },
+  "gce kali-last-snapshot-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "gce"
+    }
+  },
+  "gce kali-rolling amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "gce"
+    }
+  },
+  "gce kali-rolling-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
       "CLOUD_VENDOR": "gce"
     }
   },
@@ -533,6 +923,240 @@
       "CLOUD_VENDOR": "generic"
     }
   },
+  "generic kali-dev amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-dev arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-dev ppc64el build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "ppc64el",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-dev-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-dev-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-dev-minimal ppc64el build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "ppc64el",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-last-snapshot amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-last-snapshot arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-last-snapshot ppc64el build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "ppc64el",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-last-snapshot-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-last-snapshot-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-last-snapshot-minimal ppc64el build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "ppc64el",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-rolling amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-rolling arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-rolling ppc64el build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "ppc64el",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-rolling-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-rolling-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
+  "generic kali-rolling-minimal ppc64el build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "ppc64el",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
+      "CLOUD_VENDOR": "generic"
+    }
+  },
   "generic sid amd64 build": {
     "extends": ".build",
     "rules": [
@@ -686,6 +1310,162 @@
     "variables": {
       "CLOUD_ARCH": "arm64",
       "CLOUD_RELEASE": "buster-backports",
+      "CLOUD_VENDOR": "genericcloud"
+    }
+  },
+  "genericcloud kali-dev amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "genericcloud"
+    }
+  },
+  "genericcloud kali-dev arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "genericcloud"
+    }
+  },
+  "genericcloud kali-dev-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "genericcloud"
+    }
+  },
+  "genericcloud kali-dev-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "genericcloud"
+    }
+  },
+  "genericcloud kali-last-snapshot amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "genericcloud"
+    }
+  },
+  "genericcloud kali-last-snapshot arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "genericcloud"
+    }
+  },
+  "genericcloud kali-last-snapshot-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "genericcloud"
+    }
+  },
+  "genericcloud kali-last-snapshot-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "genericcloud"
+    }
+  },
+  "genericcloud kali-rolling amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "genericcloud"
+    }
+  },
+  "genericcloud kali-rolling arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "genericcloud"
+    }
+  },
+  "genericcloud kali-rolling-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
+      "CLOUD_VENDOR": "genericcloud"
+    }
+  },
+  "genericcloud kali-rolling-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
       "CLOUD_VENDOR": "genericcloud"
     }
   },
@@ -907,6 +1687,240 @@
     "variables": {
       "CLOUD_ARCH": "ppc64el",
       "CLOUD_RELEASE": "buster-backports",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-dev amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-dev arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-dev ppc64el build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "ppc64el",
+      "CLOUD_RELEASE": "kali-dev",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-dev-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-dev-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-dev-minimal ppc64el build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "ppc64el",
+      "CLOUD_RELEASE": "kali-dev-minimal",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-last-snapshot amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-last-snapshot arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-last-snapshot ppc64el build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "ppc64el",
+      "CLOUD_RELEASE": "kali-last-snapshot",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-last-snapshot-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-last-snapshot-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-last-snapshot-minimal ppc64el build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "ppc64el",
+      "CLOUD_RELEASE": "kali-last-snapshot-minimal",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-rolling amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-rolling arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-rolling ppc64el build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "ppc64el",
+      "CLOUD_RELEASE": "kali-rolling",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-rolling-minimal amd64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "amd64",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-rolling-minimal arm64 build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "arm64",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
+      "CLOUD_VENDOR": "nocloud"
+    }
+  },
+  "nocloud kali-rolling-minimal ppc64el build": {
+    "extends": ".build",
+    "rules": [
+      {
+        "when": "manual"
+      }
+    ],
+    "variables": {
+      "CLOUD_ARCH": "ppc64el",
+      "CLOUD_RELEASE": "kali-rolling-minimal",
       "CLOUD_VENDOR": "nocloud"
     }
   },

@@ -15,6 +15,36 @@ class TestVar:
             'runit',
             'unattended-upgrades',
             'wtmp',
+            # From kali-linux-headless
+            'apache2',
+            'fontconfig.log',
+            'inetsim',
+            'mysql',
+            'nginx',
+            'openvpn',
+            'postgresql',
+            'samba',
+            'stunnel4',
+            'sysstat',
+            # From kali-desktop-large
+            'chkrootkit',
+            'dradis',
+            # From kali-linux-everything
+            'defectdojo',
+            'eaphammer',
+            'exim4',
+            'freeradius',
+            'freeradius-wpe',
+            'fsck',
+            'gvm',
+            'hostapd-wpe',
+            'redis',
+            'redsnarf',
+            'tor',
+            # From kali-desktop-core
+            'speech-dispatcher',
+            # From kali-desktop-kde
+            'sddm.log',
         ))
 
         assert len(c) == 0, '/var/log contains unexpected files: {}'.format(', '.join(c))

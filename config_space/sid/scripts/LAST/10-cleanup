@@ -11,6 +11,10 @@ rm -f $target/etc/mailname \
       $target/var/log/dpkg.log \
       $target/var/log/install_packages.list
 
+# From kali-linux-headless
+rm -rf $target/tmp/hsperfdata_root \
+       $target/tmp/dotnet-installer
+
 rm -rf $target/var/cache/apt/*
 rm -rf $target/var/lib/apt/lists/*
 rm -rf $target/var/log/fai
